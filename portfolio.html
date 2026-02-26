@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Моё портфолио</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="custom2.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Моё портфолио</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#home">Главная</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">О себе</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Навыки</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Проекты</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home">
+      <div class="container text-center">
+        <h1 class="display-4">Ханов Владислав Вячеславович</h1>
+        <p class="lead">Студент</p>
+        <span class="badge bg-primary me-2">HTML</span>
+        <span class="badge bg-success me-2">CSS</span>
+        <span class="badge bg-warning text-dark">С#</span>
+        <div class="mt-4">
+          <a href="#about" class="btn btn-primary btn-lg">Подробнее</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">О себе</h2>
+        <div class="row">
+          <div class="col-md-4 text-center">
+            <img src="img/my_photo.jpg" class="rounded-circle img-fluid" alt="Фото" />
+          </div>
+          <div class="col-md-8">
+            <p>
+              Меня зовут Влад! Я студент Волжского филиала ВолГУ, начинающий программист. Учусь на 3 курсе направления "Информационные системы и программирование". Изучаю HTML, CSS и Bootstrap, С# и чуть-чуть JavaScript :-)
+            </p>
+            <p>Создаю адаптивные сайты. В моём портфолио есть несколько лабораторных работ по HTMK, CSS и Bootstrap.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">Навыки</h2>
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <div class="card text-center p-3">
+              <i class="bi bi-code-slash display-4 text-primary"></i>
+              <h5 class="mt-2">HTML</h5>
+              <p>Верстка сайтов</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card text-center p-3">
+              <i class="bi bi-pencil-fill display-4 text-success"></i>
+              <h5 class="mt-2">CSS</h5>
+              <p>Стилизация сайтов</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card text-center p-3">
+              <i class="bi bi-bootstrap-fill display-4 text-warning"></i>
+              <h5 class="mt-2">Bootstrap</h5>
+              <p>Создание адаптивных веб-интерфейсов</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Мое портфолио</h2>
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="card h-100">
+              <div class="ratio ratio-16x9">
+                <iframe src="experiment.html" title="Experiment"></iframe>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Товары</h5>
+                <p class="card-text">Карточки товаров с рейтингом и кнопкой</p>
+                <a href="experiment.html" class="btn btn-primary" target="_blank">Открыть</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card h-100">
+              <div class="ratio ratio-16x9">
+                <iframe src="gallery.html" title="Gallery"></iframe>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Галлерея</h5>
+                <p class="card-text">Галерея картинок с фильтрацией по категориям</p>
+                <a href="gallery.html" class="btn btn-success" target="_blank">Открыть</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card h-100">
+              <div class="ratio ratio-16x9">
+                <iframe src="index.html" title="Index"></iframe>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Сайт с использованием Bootstrap</h5>
+                <p class="card-text">Главная страница с навигацией и карточками</p>
+                <a href="index.html" class="btn btn-warning" target="_blank">Открыть</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card h-100">
+              <div class="ratio ratio-16x9">
+                <iframe src="timeline.html" title="Timeline"></iframe>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Моя история</h5>
+                <p class="card-text">Временная шкала достижений</p>
+                <a href="timeline.html" class="btn btn-danger" target="_blank">Открыть</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-5 bg-light">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <h2 class="text-center mb-4">Контакты</h2>
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Имя</label>
+                <input type="text" class="form-control" id="name" placeholder="Введите ваше имя" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Введите ваш email" />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Сообщение</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Ваше сообщение"></textarea>
+              </div>
+              <div class="d-grid">
+                <button type="submit" class="btn btn-primary">Отправить</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <h5>О сайте</h5>
+            <p>Моё портфолио с лабораторными работами по Bootstrap</p>
+          </div>
+          <div class="col-md-4 mb-3">
+            <h5>Быстрые ссылки</h5>
+            <ul class="list-unstyled">
+              <li><a href="#home" class="text-white-50 text-decoration-none">Главная</a></li>
+              <li><a href="#about" class="text-white-50 text-decoration-none">О себе</a></li>
+              <li><a href="#skills" class="text-white-50 text-decoration-none">Навыки</a></li>
+              <li><a href="#projects" class="text-white-50 text-decoration-none">Проекты</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-3">
+            <h5>Социальные сети</h5>
+            <a href="https://github.com/vvkkdehg" class="text-white-50 me-3"><i class="bi bi-github fs-4"></i></a>
+            <a href="https://t.me/Furchikushka" class="text-white-50 me-3"><i class="bi bi-telegram fs-4"></i></a>
+          </div>
+        </div>
+        <hr class="bg-secondary" />
+        <p class="text-center mb-0">© 2026 Ханов Владислав. Мое портфолио</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-wn6IDeQp0pxW6l6zO/a1p6DZ4uJ/4bY3D4Qp6F1kYF4ZJ5nX5gF0lG8t9w6jF5k"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
